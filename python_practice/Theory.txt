@@ -1,0 +1,186 @@
+>>> help(object)
+Help on class object in module builtins:                                                                                                             
+
+class object
+ |  The base class of the class hierarchy.
+ |
+ |  When called, it accepts no arguments and returns a new featureless
+ |  instance that has no instance attributes and cannot be given any.
+ |
+ |  Built-in subclasses:
+ |      anext_awaitable
+ |      async_generator
+ |      async_generator_asend
+ |      async_generator_athrow
+ |      ... and 89 other subclasses
+ |
+ |  Methods defined here:
+ |
+ |  __delattr__(self, name, /)
+ 
+ 
+ PS C:\Users\anilc\Desktop\python_practice> dir
+
+
+    Directory: C:\Users\anilc\Desktop\python_practice
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        16-07-2023     22:56                .idea
+d-----        15-07-2023     19:52                project_1
+d-----        01-07-2023     14:46                venv
+-a----        02-07-2023     23:03            888 01_07_ String_practice_join.py
+-a----        03-07-2023     22:16            809 01_07_For_while_loop_practice.py
+-a----        02-07-2023     16:53            809 01_07_Iterators.py
+-a----        05-07-2023     22:45            507 01_07_Iterators_practice.py
+-a----        01-07-2023     19:55            712 01_07_string_practice_join_1.py
+-a----        02-07-2023     08:00            327 01_07_Strip_with.py
+-a----        01-07-2023     16:56            598 01_07_Type_practice.py
+-a----        02-07-2023     14:05           1082 02_07_Comprehensions_practice.py
+-a----        02-07-2023     12:57            849 02_07_Default_arguments_1.py
+-a----        02-07-2023     14:07            371 02_07_Dictionary_comprehension.py
+-a----        02-07-2023     21:59            971 02_07_Generators.py
+-a----        02-07-2023     22:02           1337 02_07_Return_usage.py
+-a----        16-07-2023     12:26            531 02_07_Scope-practice.py
+-a----        04-07-2023     17:27            587 02_07_Type_practice.py                                                                             
+-a----        03-07-2023     17:52            273 07_06_Conditional_statements.py
+-a----        13-07-2023     15:46            485 12_07_Logging_practice.py
+-a----        13-07-2023     22:59            269 13_07_febonocci_practice.py
+-a----        15-07-2023     13:43            200 14_07_LEGB_1.py
+-a----        15-07-2023     13:45            253 14_07_LEGB_2.py
+-a----        15-07-2023     13:46            306 14_07_LEGB_3.py
+-a----        16-07-2023     12:49            371 14_07_LEGB_4.py
+-a----        15-07-2023     13:51            372 14_07_LEGB_5.py
+-a----        15-07-2023     10:00            458 14_07_Pattern_1.py
+-a----        14-07-2023     22:52            182 14_07_Pattern_2.py
+-a----        15-07-2023     10:56            181 14_07_Pattern_3.py
+-a----        15-07-2023     10:13            181 14_07_pattern_5.py
+-a----        14-07-2023     22:47            203 14_07_Print_vs_Print_end.py
+-a----        15-07-2023     16:45           1315 14_07_Ticket _caliculation_dummy.py
+-a----        15-07-2023     11:36             78 14_07__pattern_33.py                                                                               
+-a----        15-07-2023     10:08            181 14_07__Pattern_4.py
+-a----        04-07-2023     19:18            396 15_06_Basic_mathematic_operations.py
+-a----        16-07-2023     14:10            231 16_07_in_practice.py
+-a----        16-07-2023     14:15            454 16_07_is_practice.py
+-a----        16-07-2023     14:48            264 16_07_None_practice.py
+-a----        16-07-2023     14:37            354 16_07_not.py
+-a----        16-07-2023     22:55            554 16_7_Practice.py
+-a----        21-06-2023     12:09            869 17_06_List_operations1.py
+-a----        21-06-2023     16:07            128 17_06_List_operations12.py
+-a----        26-06-2023     11:14            276 17_06_List_operations_122.py
+-a----        04-07-2023     18:47            247 17_06_List_operations_123.py
+-a----        25-06-2023     23:05             86 17_06_List_operations_1234.py                                                                      
+-a----        05-07-2023     22:45            326 18_06_Even_odd_1.py
+-a----        16-06-2023     11:01            439 18_06_Functions_Add_sub_mul.py
+-a----        22-06-2023     22:38            802 18_06_Student_average_marks.py
+-a----        22-06-2023     18:43            266 18_06_Student_marks.py
+-a----        04-07-2023     18:55            205 19_06_Sum_of_list_predefined_userdefined.py
+-a----        04-07-2023     18:57            368 19_06_Sum_of_n_numbers.py
+-a----        04-07-2023     18:57            245 19_06_Tables_printing.py
+-a----        24-06-2023     16:38            289 19_06_Tuple_operations_12.py
+-a----        24-06-2023     16:36             44 19_06_Tuple_operations_223.py
+-a----        24-06-2023     16:50            185 19_06_Tuple_operations_3.py
+-a----        27-06-2023     10:24             66 19_06_Tuple_operations_4.py
+-a----        24-06-2023     16:27            303 20_06_Tuple_operations_2.py                                                                        
+-a----        23-06-2023     18:53            239 21_06_Set_clear_delete.py
+-a----        23-06-2023     18:12            250 21_06_Set_operations_1.py
+-a----        23-06-2023     18:32            517 21_06_Set_operations_2.py
+-a----        23-06-2023     18:45            170 21_06_Set_remove22.py
+-a----        25-06-2023     16:35            274 22_06_Dictionary_operations_1.py
+-a----        24-06-2023     10:32            189 22_06_Dictionary_operations_11.py
+-a----        24-06-2023     12:25            363 22_06_Dictionary_operations_12.py
+-a----        24-06-2023     12:56            537 22_06_Dictionary_operations_13.py
+-a----        03-07-2023     17:54            540 24_06_Addition_args.py
+-a----        03-07-2023     17:52            571 24_06_Addition_arguments_1.py
+-a----        03-07-2023     17:31           1340 26_06_Caliculator1.py
+-a----        03-07-2023     17:37           1004 26_06_Compound_interest.py
+-a----        03-07-2023     17:37            790 26_06_Compound_interest_2.py
+-a----        22-06-2023     18:30            398 26_06_Inhheritance_teja.py
+-a----        20-06-2023     21:47            596 26_06_Simple_interest_1.py
+-a----        13-07-2023     15:53           2280 29_06_Even _odd_numbers .py
+-a----        13-07-2023     23:08            639 29_06_Febinocci_series.py
+-a----        04-07-2023     16:48            453 29_06_List_age_height_printing.py
+-a----        04-07-2023     16:48            351 29_06_List_age_height_printing1.py
+-a----        01-07-2023     14:36            764 29_06_List_steps.py
+-a----        29-06-2023     21:48            380 29_06_Palindrome_number.py
+-a----        13-07-2023     23:13            638 29_06_Prime_number.py
+-a----        14-07-2023     21:56            605 29_06_prime_number1.py
+-a----        01-07-2023     14:36            341 29_06_Reversal _of_number.py
+-a----        14-07-2023     12:50            151 29_06_Reversal_of_string.py
+-a----        04-07-2023     19:07            595 29_06_Type_casting1.py
+-a----        14-07-2023     12:50            730 29_06__Febinocci_series_1.py
+-a----        01-07-2023     17:49            474 30_06_For _vs_While.py
+-a----        15-07-2023     11:47             62 operator_overloading.py
+
+
+ctrl+home
+home
+ctrl+end
+end
+
+cmd --> command prompt
+mstsc --> remote desktop
+
+
+C:\Users\anilc>ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Unknown adapter Local Area Connection:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Unknown adapter Local Area Connection 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . : bbrouter
+   Link-local IPv6 Address . . . . . : fe80::74c9:ac27:f191:5220%12
+   IPv4 Address. . . . . . . . . . . : 192.168.1.37
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.1.1
+   
+   
+ C:\Users\anilc>ping 192.168.1.37
+
+Pinging 192.168.1.37 with 32 bytes of data:
+Reply from 192.168.1.37: bytes=32 time<1ms TTL=64
+Reply from 192.168.1.37: bytes=32 time<1ms TTL=64
+Reply from 192.168.1.37: bytes=32 time<1ms TTL=64
+Reply from 192.168.1.37: bytes=32 time<1ms TTL=64
+
+Ping statistics for 192.168.1.37:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 0ms, Average = 0ms
+
+C:\Users\anilc>ping 192.168.1.39
+
+Pinging 192.168.1.39 with 32 bytes of data:
+Reply from 192.168.1.37: Destination host unreachable.
+Reply from 192.168.1.37: Destination host unreachable.
+Reply from 192.168.1.37: Destination host unreachable.
+Reply from 192.168.1.37: Destination host unreachable.
+
+Ping statistics for 192.168.1.39:

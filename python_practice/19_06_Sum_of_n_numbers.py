@@ -1,0 +1,20 @@
+
+"""
+# # Author Anilkumar
+# # problem Statement: Sum of natural numbers up to num
+# # input :  natural numbers
+"""
+
+# Sum of natural numbers up to num
+
+num = 26
+
+if num < 0:
+   print("Enter a positive number")
+else:
+   sum = 0
+   # use while loop to iterate until zero
+   while(num > 0):
+       sum += num
+       num -= 1
+   print("The sum is", sum)

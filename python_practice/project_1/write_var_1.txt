@@ -1,0 +1,24 @@
+Q16.What are the new features added in Python 3.9.0.0 version?
+Ans: The new features in Python 3.9.0.0 version are-
+New Dictionary functions Merge(|) and Update(|=)
+New String Methods to Remove Prefixes and Suffixes
+Type Hinting Generics in Standard Collections
+New Parser based on PEG rather than LL1
+New modules like zoneinfo and graphlib
+Improved Modules like ast, asyncio, etc.
+Optimizations such as optimized idiom for assignment,
+signal handling, optimized python built ins, etc.
+Deprecated functions and commands such as deprecated parser and symbol modules,
+ deprecated functions, etc.
+Removal of erroneous methods, functions, etc.
+Q17. How is memory managed in Python?
+Ans: Memory is managed in Python in the following ways:
+
+Memory management in python is managed by Python private heap space.
+All Python objects and data structures are located in a private heap.
+ The programmer does not have access to this private heap.
+ The python interpreter takes care of this instead.
+The allocation of heap space for Python objects is done by Python’s memory manager.
+ The core API gives access to some tools for the programmer to code.
+Python also has an inbuilt garbage collector,
+which recycles all the unused memory and so that it can be made available to the heap space.
