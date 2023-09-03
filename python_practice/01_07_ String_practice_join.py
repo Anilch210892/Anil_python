@@ -24,4 +24,12 @@ list_3 = statement.split("country")
 print(f"The list_3 is {list_3}")
 
 ####
+"""
+st_1 = "India is having 135 crores of popilation and 5th largest economy  and 2nd largest youth population"
+st_1.split()
+list_1 = st_1.split(" ")
+print(f"The list_1 is {list_1}")
+"""
+
+
 

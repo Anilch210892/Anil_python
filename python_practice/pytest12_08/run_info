@@ -1,0 +1,235 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\anilc\PycharmProjects> pwd
+
+Path
+----
+C:\Users\anilc\PycharmProjects
+
+
+PS C:\Users\anilc\PycharmProjects> cd C:\Users\anilc\PycharmProjects\Anil_repo\Anil_python\python_practice\pytest12_08
+PS C:\Users\anilc\PycharmProjects\Anil_repo\Anil_python\python_practice\pytest12_08> pwd
+
+Path
+----
+C:\Users\anilc\PycharmProjects\Anil_repo\Anil_python\python_practice\pytest12_08
+
+
+PS C:\Users\anilc\PycharmProjects\Anil_repo\Anil_python\python_practice\pytest12_08> pytest -v
+=============================================================== test session starts ===============================================================
+platform win32 -- Python 3.11.3, pytest-7.4.0, pluggy-1.2.0 -- C:\Python311\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\anilc\PycharmProjects\Anil_repo\Anil_python\python_practice\pytest12_08
+collected 32 items
+
+test_calculator.py::test_add_1 PASSED                                                                                                        [  3%]
+test_calculator.py::test_add_2 FAILED                                                                                                        [  6%]
+test_calculator.py::test_add_3 FAILED                                                                                                        [  9%]
+test_calculator.py::test_add_4 PASSED                                                                                                        [ 12%]
+test_calculator.py::test_add_5 PASSED                                                                                                        [ 15%]
+test_calculator.py::test_subtraction_1 PASSED                                                                                                [ 18%]
+test_calculator.py::test_subtraction_2 FAILED                                                                                                [ 21%]
+test_calculator.py::test_subtraction_3 PASSED                                                                                                [ 25%]
+test_calculator.py::test_multiplication_3 PASSED                                                                                             [ 28%]
+test_calculator.py::test_multiplication_4 PASSED                                                                                             [ 31%]
+test_calculator.py::test_division_1 FAILED                                                                                                   [ 34%]
+test_calculator.py::test_division_2 PASSED                                                                                                   [ 37%]
+test_calculator.py::test_division_3 PASSED                                                                                                   [ 40%]
+test_calculator.py::test_modulus_1 PASSED                                                                                                    [ 43%]
+test_calculator_addition.py::test_add_1 PASSED                                                                                               [ 46%]
+test_calculator_addition.py::test_add_2 PASSED                                                                                               [ 50%]
+test_calculator_addition.py::test_add_3 FAILED                                                                                               [ 53%]
+test_calculator_addition.py::test_add_4 FAILED                                                                                               [ 56%]
+test_calculator_division.py::test_division_1 PASSED                                                                                          [ 59%]
+test_calculator_division.py::test_division_2 PASSED                                                                                          [ 62%]
+test_calculator_division.py::test_division_3 FAILED                                                                                          [ 65%]
+test_calculator_division.py::test_division_4 FAILED                                                                                          [ 68%]
+test_calculator_modulus.py::test_modulus_1 PASSED                                                                                            [ 71%]
+test_calculator_modulus.py::test_modulus_2 FAILED                                                                                            [ 75%]
+test_calculator_multiplication.py::test_multiplication_1 PASSED                                                                              [ 78%]
+test_calculator_multiplication.py::test_multiplication_2 PASSED                                                                              [ 81%]
+test_calculator_multiplication.py::test_multiplication_3 FAILED                                                                              [ 84%]
+test_calculator_multiplication.py::test_multiplication_4 FAILED                                                                              [ 87%]
+test_calculator_subtraction.py::test_subtraction_1 PASSED                                                                                    [ 90%]
+test_calculator_subtraction.py::test_subtraction_2 PASSED                                                                                    [ 93%]
+test_calculator_subtraction.py::test_subtraction_3 FAILED                                                                                    [ 96%]
+test_calculator_subtraction.py::test_subtraction_4 FAILED                                                                                    [100%]
+
+==================================================================== FAILURES =====================================================================
+___________________________________________________________________ test_add_2 ____________________________________________________________________
+
+    def test_add_2():
+        caliculator_add_1 = Caliculator("add",-1,12)
+>       assert caliculator_add_1.caliculate_result()==8
+E       assert 11 == 8
+E        +  where 11 = <bound method Caliculator.caliculate_result of <calculator.Caliculator object at 0x00000203818B8490>>()
+E        +    where <bound method Caliculator.caliculate_result of <calculator.Caliculator object at 0x00000203818B8490>> = <calculator.Caliculator object at 0x00000203818B8490>.caliculate_result
+
+test_calculator.py:14: AssertionError
+___________________________________________________________________ test_add_3 ____________________________________________________________________
+
+    def test_add_3():
+        caliculator_add_1 = Caliculator("add",2,5)
+>       assert caliculator_add_1.caliculate_result()==3
+E       assert 7 == 3
+E        +  where 7 = <bound method Caliculator.caliculate_result of <calculator.Caliculator object at 0x00000203818B3150>>()
+E        +    where <bound method Caliculator.caliculate_result of <calculator.Caliculator object at 0x00000203818B3150>> = <calculator.Caliculator object at 0x00000203818B3150>.caliculate_result
+
+test_calculator.py:18: AssertionError
+_______________________________________________________________ test_subtraction_2 ________________________________________________________________
+
+    def test_subtraction_2():
+        caliculator_subtraction_2 = Caliculator("subtraction",-1,-6)
+>       assert caliculator_subtraction_2.caliculate_result()==-7
+E       assert 5 == -7
+E        +  where 5 = <bound method Caliculator.caliculate_result of <calculator.Caliculator object at 0x00000203818A5B50>>()
+E        +    where <bound method Caliculator.caliculate_result of <calculator.Caliculator object at 0x00000203818A5B50>> = <calculator.Caliculator object at 0x00000203818A5B50>.caliculate_result
+
+test_calculator.py:35: AssertionError
+_________________________________________________________________ test_division_1 _________________________________________________________________
+
+    def test_division_1():
+        caliculator_division_1 = Caliculator("division", 2,3)
+>       assert caliculator_division_1.caliculate_result() == 0.66
+E       assert 0.6666666666666666 == 0.66
+E        +  where 0.6666666666666666 = <bound method Caliculator.caliculate_result of <calculator.Caliculator object at 0x00000203830BB610>>()
+E        +    where <bound method Caliculator.caliculate_result of <calculator.Caliculator object at 0x00000203830BB610>> = <calculator.Caliculator object at 0x00000203830BB610>.caliculate_result
+
+test_calculator.py:53: AssertionError
+___________________________________________________________________ test_add_3 ____________________________________________________________________
+
+    def test_add_3():
+        caliculator_add_3 = Caliculator("add",10,-2)
+>       assert caliculator_add_3.caliculate_result()==6
+E       assert 8 == 6
+E        +  where 8 = <bound method Caliculator.caliculate_result of <calculator.Caliculator object at 0x00000203818B2B50>>()
+E        +    where <bound method Caliculator.caliculate_result of <calculator.Caliculator object at 0x00000203818B2B50>> = <calculator.Caliculator object at 0x00000203818B2B50>.caliculate_result
+
+test_calculator_addition.py:16: AssertionError
+___________________________________________________________________ test_add_4 ____________________________________________________________________
+
+    def test_add_4():
+        caliculator_add_4 = Caliculator("add",-9,-10)
+>       assert caliculator_add_4.caliculate_result()==15
+E       assert -19 == 15
+E        +  where -19 = <bound method Caliculator.caliculate_result of <calculator.Caliculator object at 0x00000203818B18D0>>()
+E        +    where <bound method Caliculator.caliculate_result of <calculator.Caliculator object at 0x00000203818B18D0>> = <calculator.Caliculator object at 0x00000203818B18D0>.caliculate_result
+
+test_calculator_addition.py:20: AssertionError
+_________________________________________________________________ test_division_3 _________________________________________________________________
+
+    def test_division_3():
+        caliculator_division_3 = Caliculator("division", 25,10)
+>       assert caliculator_division_3.caliculate_result() == 2
+E       assert 2.5 == 2
+E        +  where 2.5 = <bound method Caliculator.caliculate_result of <calculator.Caliculator object at 0x00000203818A7750>>()
+E        +    where <bound method Caliculator.caliculate_result of <calculator.Caliculator object at 0x00000203818A7750>> = <calculator.Caliculator object at 0x00000203818A7750>.caliculate_result
+
+test_calculator_division.py:18: AssertionError
+_________________________________________________________________ test_division_4 _________________________________________________________________
+
+    def test_division_4():
+        caliculator_division_4 = Caliculator("division", 250,50)
+>       assert caliculator_division_4.caliculate_result() == 6
+E       assert 5.0 == 6
+E        +  where 5.0 = <bound method Caliculator.caliculate_result of <calculator.Caliculator object at 0x00000203830B8D10>>()
+E        +    where <bound method Caliculator.caliculate_result of <calculator.Caliculator object at 0x00000203830B8D10>> = <calculator.Caliculator object at 0x00000203830B8D10>.caliculate_result
+
+test_calculator_division.py:22: AssertionError
+_________________________________________________________________ test_modulus_2 __________________________________________________________________
+
+    def test_modulus_2():
+        caliculator_modulus__2 = Caliculator("modulus_", 9, 0)
+>       assert not caliculator_modulus__2.caliculate_result() == "invalid operation"
+E       AssertionError: assert not 'invalid operation' == 'invalid operation'
+E           invalid operation
+
+test_calculator_modulus.py:16: AssertionError
+______________________________________________________________ test_multiplication_3 ______________________________________________________________
+
+    def test_multiplication_3():
+        caliculator_multiplication_3 = Caliculator("multiplication", 2,-11)
+>       assert caliculator_multiplication_3.caliculate_result() == -16
+E       assert -22 == -16
+E        +  where -22 = <bound method Caliculator.caliculate_result of <calculator.Caliculator object at 0x00000203830CD250>>()
+E        +    where <bound method Caliculator.caliculate_result of <calculator.Caliculator object at 0x00000203830CD250>> = <calculator.Caliculator object at 0x00000203830CD250>.caliculate_result
+
+test_calculator_multiplication.py:18: AssertionError
+______________________________________________________________ test_multiplication_4 ______________________________________________________________
+
+    def test_multiplication_4():
+        caliculator_multiplication_4 = Caliculator("multiplication", 3,4)
+>       assert caliculator_multiplication_4.caliculate_result() == -19
+E       assert 12 == -19
+E        +  where 12 = <bound method Caliculator.caliculate_result of <calculator.Caliculator object at 0x00000203830CC5D0>>()
+E        +    where <bound method Caliculator.caliculate_result of <calculator.Caliculator object at 0x00000203830CC5D0>> = <calculator.Caliculator object at 0x00000203830CC5D0>.caliculate_result
+
+test_calculator_multiplication.py:23: AssertionError
+_______________________________________________________________ test_subtraction_3 ________________________________________________________________
+
+    def test_subtraction_3():
+        caliculator_subtraction_3 = Caliculator("subtraction", 25, 36)
+>       assert caliculator_subtraction_3.caliculate_result() == -8
+E       assert -11 == -8
+E        +  where -11 = <bound method Caliculator.caliculate_result of <calculator.Caliculator object at 0x00000203818BA090>>()
+E        +    where <bound method Caliculator.caliculate_result of <calculator.Caliculator object at 0x00000203818BA090>> = <calculator.Caliculator object at 0x00000203818BA090>.caliculate_result
+
+test_calculator_subtraction.py:24: AssertionError
+_______________________________________________________________ test_subtraction_4 ________________________________________________________________
+
+    def test_subtraction_4():
+        caliculator_subtraction_4 = Caliculator("subtraction", 5,-6)
+>       assert caliculator_subtraction_4.caliculate_result() == -8
+E       assert 11 == -8
+E        +  where 11 = <bound method Caliculator.caliculate_result of <calculator.Caliculator object at 0x00000203818BB310>>()
+E        +    where <bound method Caliculator.caliculate_result of <calculator.Caliculator object at 0x00000203818BB310>> = <calculator.Caliculator object at 0x00000203818BB310>.caliculate_result
+
+test_calculator_subtraction.py:29: AssertionError
+============================================================= short test summary info =============================================================
+FAILED test_calculator_multiplication.py::test_multiplication_3 - assert -22 == -16
+FAILED test_calculator_multiplication.py::test_multiplication_4 - assert 12 == -19
+FAILED test_calculator_subtraction.py::test_subtraction_3 - assert -11 == -8
+FAILED test_calculator_subtraction.py::test_subtraction_4 - assert 11 == -8
+========================================================== 13 failed, 19 passed in 0.15s ==========================================================
+PS C:\Users\anilc\PycharmProjects\Anil_repo\Anil_python\python_practice\pytest12_08> pytest .\test_calculator_addition.py -v
+=============================================================== test session starts ===============================================================
+platform win32 -- Python 3.11.3, pytest-7.4.0, pluggy-1.2.0 -- C:\Python311\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\anilc\PycharmProjects\Anil_repo\Anil_python\python_practice\pytest12_08
+collected 4 items
+
+test_calculator_addition.py::test_add_1 PASSED                                                                                               [ 25%]
+test_calculator_addition.py::test_add_2 PASSED                                                                                               [ 50%]
+test_calculator_addition.py::test_add_3 FAILED                                                                                               [ 75%]
+test_calculator_addition.py::test_add_4 FAILED                                                                                               [100%]
+
+==================================================================== FAILURES =====================================================================
+___________________________________________________________________ test_add_3 ____________________________________________________________________
+
+    def test_add_3():
+        caliculator_add_3 = Caliculator("add",10,-2)
+>       assert caliculator_add_3.caliculate_result()==6
+E       assert 8 == 6
+E        +  where 8 = <bound method Caliculator.caliculate_result of <calculator.Caliculator object at 0x00000182165EB090>>()
+E        +    where <bound method Caliculator.caliculate_result of <calculator.Caliculator object at 0x00000182165EB090>> = <calculator.Caliculator object at 0x00000182165EB090>.caliculate_result
+
+test_calculator_addition.py:16: AssertionError
+___________________________________________________________________ test_add_4 ____________________________________________________________________
+
+    def test_add_4():
+        caliculator_add_4 = Caliculator("add",-9,-10)
+>       assert caliculator_add_4.caliculate_result()==15
+E       assert -19 == 15
+E        +  where -19 = <bound method Caliculator.caliculate_result of <calculator.Caliculator object at 0x00000182165F9690>>()
+E        +    where <bound method Caliculator.caliculate_result of <calculator.Caliculator object at 0x00000182165F9690>> = <calculator.Caliculator object at 0x00000182165F9690>.caliculate_result
+
+test_calculator_addition.py:20: AssertionError
+============================================================= short test summary info =============================================================
+FAILED test_calculator_addition.py::test_add_3 - assert 8 == 6
+FAILED test_calculator_addition.py::test_add_4 - assert -19 == 15
+=========================================================== 2 failed, 2 passed in 0.04s ===========================================================
+PS C:\Users\anilc\PycharmProjects\Anil_repo\Anil_python\python_practice\pytest12_08>
+

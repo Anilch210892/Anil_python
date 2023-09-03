@@ -6,6 +6,7 @@
 # output:0,1,1,2,3,5,8,13,21,34
 # """
 
+"""
 num_1=0
 num_2=1
 number_fibonacci=int(input("Enter the number_fibonacci:"))
@@ -21,14 +22,23 @@ for number in range(0,number_fibonacci-2):
 print(f"Final list is : {list_1}")
 print (f"the sum of list numbers is {sum(list_1)}")
 
+"""
 
 
 
 
 
 
-
-
+num_1=0
+num_2=1
+number_febinocci=int(input("Enter the number_febinocci is :"))
+list_2=[]
+for number in range(0,number_febinocci-2):
+    num_3=num_1+num_2
+    num_1=num_2
+    num_2=num_3
+    list_2.append(num_3)
+print(f"The final value of list_2 is {list_2}")
 
 
 
