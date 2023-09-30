@@ -7,14 +7,15 @@
 
 
 
-"""
+
 
 letters ="ABCDEF"
-letters[::-1]
+letters_1=letters[::-1]
+print(letters_1)
+
+
+
 """
-
-
-
 
 
 def reverse(s):
@@ -32,7 +33,7 @@ print(s)
 print("The string is : ", end="")
 print(reverse(s))
 
-
+"""
 
 
 

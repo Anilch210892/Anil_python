@@ -7,10 +7,8 @@ num = int(input("Enter your number"))
 for i in range(2, num):
     if (num % i) == 0:
         print(num, "is not a prime number")
-    else:
-        print(num, "is a prime number")
-
+        break
 # if input number is less than
 # or equal to 1, it is not prime
 else:
-    print(num, "is not a prime number")
+    print(num, "is a prime number")
