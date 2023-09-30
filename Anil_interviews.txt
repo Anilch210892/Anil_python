@@ -1,0 +1,67 @@
+-------------------mirafra 1st round-----------------------------
+
+1 introduction
+
+2 tell me about method overloading, method overriding
+
+3 how to hide data, give me 1 example
+
+4 program how to convert lower case to uppercase without using builtin methods
+
+5 how to sort in a list
+
+6 explain generator or decorator
+
+7 tell me about dispatch in python
+
+8 what is difference between list and tuple
+
+9 TELL ME ABOUT DUNDER methods
+
+
+-------------------Harman1st round-----------------------------
+
+1 tell me about yourself
+
+2 asked some questions in resume
+
+3 what is STLC
+
+4 which frame work used in your company
+
+5 what is MSV framework
+
+6 what is beyond comapare and its purpose
+
+
+7 innosetup
+
+8 paramiko, pylint?
+
+
+9 you are belongs to embedded or automotive domain
+
+10 febinocci series program for 5 numbers
+
+
+11 print 1st 10 even numbers  using lambda
+
+12 list1=["radha", "naveen","kiran"]
+r-1
+a-2
+d-3
+
+
+
+
+-----------------moolya software----------------------------
+
+
+1 tell me about yourself, experience
+
+2 python , selenium how many years of  experience
+
+3selenium web driver architecture
+
+
+4differnce between xpath and css selector
